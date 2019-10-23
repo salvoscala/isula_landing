@@ -1,0 +1,15 @@
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+.ui-widget textarea,
+.ui-widget input,
+.ui-dialog .ui-dialog-buttonpane button,
+.ui-widget {
+  font-family: $font-family-base;
+  font-weight: 300;
+}
+
+.ui-dialog .ui-dialog-buttonpane button:hover {
+  font-weight: 300;
+}

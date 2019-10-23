@@ -1,0 +1,78 @@
+.block-views-blockreviews-block-3,
+.block-views-blockreviews-block-2,
+.block-views-blockreviews-block-1 {
+  border: 2px solid $brand-primary;
+  background: white;
+  padding: 40px;
+  padding-bottom: 20px;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  @media (max-width: 400px) {
+    max-width: 300px;
+  }
+  .slick__slide {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .block-title {
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 20px;
+    color: #163a6b;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    &:after {
+      position: absolute;
+      bottom: -5px;
+      content: '';
+      width: 80px;
+      height: 2px;
+      background: #163a6b;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    margin: 20px auto;
+  }
+  .views-field-title {
+    color: #b3b1b1;
+    font-size: 13px;
+    .title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #000;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .starrating {
+    display: inline-block;
+    width: 100%;
+  }
+  .slick__slide  {
+    margin-bottom: 15px;
+  }
+  .slick-dots {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    li {
+      width: 10px;
+      height: 10px;
+      margin: 0 3px;
+
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.page-node-type-homepage {
+  section {
+    padding: 40px 0;
+  }
+  .center-content {
+    background: #eaeaea;
+    padding: 60px 0;
+    section {
+      padding: 0;
+    }
+    .block-region-center-sidebar {
+      background: #fff;
+    }
+  }
+  section.block-views-blockhomepage-block-2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    .form-group {
+      margin-bottom: 0;
+    }
+    .views-field-field-image-gallery img {
+      width: 100%;
+    }
+  }
+  section.block.block-isula-booking-block {
+
+  }
+  .block-entity-fieldnodebody {
+    @extend .container;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 60px 0 20px 0;
+    @media (max-width: $screen-xs) {
+      padding: 35px 15px 0px 15px;
+    }
+  }
+  .block-entity-fieldnodefield-icons {
+    @extend .container;
+    @media (max-width: $screen-xs) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .field--name-field-icons > .field--item {
+      @include make-xs-column(3, 0);
+      @include make-sm-column(6, 15);
+      text-align: center;
+      .field--name-field-title {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      img {
+        margin: 0 auto;
+        display: table;
+      }
+      padding: 20px;
+      @media (max-width: $screen-xs) {
+        padding-left: 5px;
+        padding-right: 5px;
+        .field--name-field-title  {
+          font-size: 12px;
+          text-align: center;
+        }
+        img {
+          width: 100%;
+        }
+        .field--name-field-text {
+          display: none;
+        }
+      }
+    }
+  }
+  .block-views-blockpromoted-properties-block-1 .view-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prefooter {
+    margin-top: 50px;
+  }
+}

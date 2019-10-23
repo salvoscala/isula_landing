@@ -1,0 +1,28 @@
+<div {{ attributes.setAttribute('id', settings.css_id).addClass('isula-one-column', settings.css_classes ) }}>
+  <div class="top">
+    {{ content.top }}
+  </div>
+
+  <div class="center">
+    {{ content.center }}
+  </div>
+
+  <div class="center-content">
+    <div class="container">
+      <!-- Hits -->
+      <div class="col-xs-12 col-md-8 col-md-push-4 main-col">
+        {{ content.center_content }}
+      </div>
+
+      <!-- Facets -->
+      <div class="col-xs-12 col-md-4 col-md-pull-8 left-col">
+        {{ content.center_sidebar }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    {{ content.bottom }}
+  </div>
+
+</div>

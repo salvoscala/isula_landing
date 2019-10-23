@@ -1,0 +1,588 @@
+body.page-node-type-property {
+  .slick--thumbnail {
+    .slick__slide {
+      padding: 1px;
+    } 
+  }
+  .slick-wrapper {
+    margin-bottom: 30px;
+  }
+  .top {
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .main-left {
+    @media (min-width: $screen-md) {
+      padding-right: 0px;
+    }
+  }
+  .sidebar {
+    @media (min-width: $screen-md) {
+      padding-left: 0px;
+    }
+  }
+  .block-entity-fieldnodetitle {
+    margin-top: 30px;
+  }
+  .block-entity-fieldnodefield-prezzo {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #959393;
+    font-weight: 300;
+  }
+  .block-isula-property-enquiry-modal {
+    text-align: center;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .view-immobili.view-display-id-block_2 {
+    margin: 25px 0;
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+    .views-row {
+      display: flex;
+      border: 1px dotted #959393;
+      background: #fff;
+      flex-wrap: wrap;
+      .views-field {
+        width: 25%;
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          border-right: 1px dotted #959393;
+        }
+        .field-content {
+          color: #959393;
+        }
+        @media (max-width: $screen-xs) {
+          width: 50%;
+          &:nth-child(3),
+          &:nth-child(4) {
+            border-top: 1px dotted #959393;
+          }
+          &:nth-child(2),
+          &:nth-child(4) {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+  .content-sidebar {
+    @media (max-width: $screen-xs) {
+      padding: 0;
+    }
+  }
+  .sub-footer {
+    @media (max-width: $screen-sm) {
+      padding-bottom: 80px;
+    }
+  }
+
+  .content-sidebar {
+    &.is_stuck {
+      margin-top: 10px;
+    }
+  }
+
+  .view-immobili.view-display-id-block_1 {
+    .views-field {
+      display: inline-block;
+      width: 100%;
+      padding-bottom:10px;
+      padding-top: 10px;
+      margin-bottom: 0px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      line-height: 1em;
+      .views-label {
+        display: inline-block;
+        float: left;
+        font-weight: bold;  
+      }
+      .field-content {
+        display: inline-block;
+        float: right;
+        color: rgb(149,147,147);
+      }
+    }
+  }
+  .highlight {
+    display: inline-block;
+    width: 100%;
+    bottom: 8px;
+    position: relative;
+    background: #153a6b;
+    color: #fff;
+    padding: 20px 0;
+    h1 {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .block-region-highlight {
+      @extend .container;
+    }
+    .block-entity-fieldnodetitle {
+      display: inline-block;
+      text-align: left;
+      color: $brand-primary;
+      padding-left: 15px;
+      h1 {
+        font-weight: 500;
+        color: #fff;
+        margin: 0;
+        @media (max-width: $screen-sm) {
+          margin-bottom: 5px;
+          font-size: 32px;
+        }
+      }
+    }
+    .block-blockgroup {
+      text-align: right;
+      @media (max-width: $screen-sm) {
+        text-align: center;
+        font-size: 14px;
+      }
+
+    }
+    .block-entity-fieldnodetitle {
+      display: inline-block;
+      float: left;
+      text-align: left;
+      @media (max-width: $screen-sm) {
+        width: 100%;
+        text-align: center;
+      }
+      
+    }
+    .block-entity-fieldnodefield-area,
+    .block-entity-fieldnodefield-max-capacity,
+    .block-entity-fieldnodefield-bedrooms,
+    .block-entity-fieldnodefield-bathrooms,
+    .block-entity-fieldnodefield-area {
+      display: inline-block;
+      margin-left: 25px;
+      margin-top: 5px;
+      @media (max-width: $screen-sm) {
+        display: inline-block;
+        text-align: center;
+      }
+      .field--item,
+      .field--items {
+        display: inline-block;
+        margin-top: 2px;
+        a {
+          text-decoration: underline;
+        }
+      }
+      .field--label {
+        display: inline-block;
+        float: left;
+        margin-top: 4px;
+        &:after {
+          content: ":";
+          margin-right: 5px;
+        }
+      }
+      
+    }
+    .block-entity-fieldnodefield-area {
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+    }
+    .field--name-field-area,
+    .field--name-field-max-capacity,
+    .field--name-field-bedrooms,
+    .field--name-field-bathrooms {
+      &:before {
+        content: '';
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        right: 6px;
+        @media (max-width: $screen-sm) {
+          top: 1px;
+        }
+      }
+    }
+    .field--name-field-area:before {
+      background: url("../images/icons/marker-white.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      display: inline-block;
+      float: left;
+      top: 2px;
+      @media (max-width: $screen-sm) {
+        top: 2px;
+      }
+    }
+    .field--name-field-max-capacity:before {
+      background: url("../images/icons/guest-white.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      display: inline-block;
+      float: left;
+    }
+    .field--name-field-bedrooms:before {
+      background: url("../images/icons/bed-white.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      top: 2px;
+      display: inline-block;
+      float: left;
+      @media (max-width: $screen-sm) {
+        top: 2px;
+      }
+    }
+    .field--name-field-bathrooms:before {
+      background: url("../images/icons/bath-white.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      display: inline-block;
+      float: left;
+    }
+  }
+  .block-entity-fieldnodefield-image-gallery {
+    @media (min-width: $screen-sm-max) {
+      //margin-top: 43px;
+    }
+  }
+  .block-entity-fieldnodefield-piantine {
+    .block-title {
+      margin-top: 0;
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+    .field--name-field-piantine {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      @media (min-width: $screen-sm) {
+        height: 492px;
+      }
+      @media (min-width: $screen-lg) {
+        height: 599px;
+      }
+      &> .field--item {
+        width: 0;
+        height: 0;
+      }
+      &> .field--item:nth-child(1),
+      &> .field--item:nth-child(2),
+      &> .field--item:nth-child(3) {
+        width: 100%;
+        justify-content: space-between;
+        height: 33%;
+        padding: 0 0 0.33% 0.33%;
+        img {
+          width: 100%;
+        }
+        @media (max-width: $screen-sm-max) {
+          width: 33.3%;
+        }
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+  /*.block-entity-fieldnodefield-image-gallery {
+    display: inline-block;
+    .field--name-field-image-gallery {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 500px;
+      @media (max-width: 767px) {
+        height: 100%;
+      }
+      .field--items,
+      .first-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 500px;
+        @media (max-width: 767px) {
+          height: 300px;
+          width: 100%;
+        }
+      }
+      .first-item {
+        a {
+          width: 100%;
+          height: 500px;
+          @media (max-width: 767px) {
+            height: 300px;
+          }
+          img {
+            margin: 0;
+            width: 100%;
+            object-fit: cover;
+            height: 100%
+          }
+        }
+      }
+      .field--item {
+        width: 50%;
+        justify-content: space-between;
+        height: 49.9%;
+        padding: 0 0 2px 3px;
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding-bottom: 0;
+        }
+        @media (max-width: 767px) {
+          &:nth-child(1),
+          &:nth-child(3) {
+            padding-left: 0;
+          }
+          &:nth-child(1),
+          &:nth-child(2) {
+            padding-top: 2px;
+          }
+        }
+        img {
+          margin: 0;
+          width: 100%;
+          object-fit: cover;
+          height: 100%
+        }
+      }
+    }
+    .view-gallery {
+      text-transform: uppercase;
+      color: #163a6b;
+      font-size: 16px;
+      background: rgba(255,255,255,0.85);
+      border: 2px solid #fff;
+      position: absolute;
+      border-radius: 7px;
+      width: 164px;
+      height: 48px;
+      line-height: 44px;
+      text-align: center;
+      margin-right: -82px;
+      pointer-events: none;
+      right: 12.5%;
+      bottom: 40px;
+      @media (max-width: 767px) {
+        right: 50%;
+        bottom: 25%;
+        margin-bottom: -24px;
+      }
+    }
+  }*/
+
+  /*.field--name-field-property-prices {
+    & > .field--item {
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      &:nth-child(odd){
+        background: white;
+      }
+      .field--name-field-from,
+      .field--name-field-to,
+      .field--name-field-price {
+        display: inline-block;
+        float: left;
+        margin-right: 25px;
+        @media (max-width: $screen-xs) {
+          width: 100%;
+          margin-bottom: 4px;
+        }
+      }
+      .field--name-field-price {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      .field--item,
+      .field--label {
+        display: inline-block;
+        float: left;
+        margin-right: 5px;
+        text-align: left;
+      }
+      .field--label {
+        font-weight: bold;
+        &:after {
+          content: ":";
+        }
+      }
+    } 
+  }*/
+  /*.block-views-blockproperty-reviews-block-1 {
+    .views-row {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #dedede;
+      padding-bottom: 20px;
+      &:last-child {
+        border-bottom: none;
+      }
+      .views-field-title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .views-field-field-rating {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  .isula-enquiry-form {
+    label {
+      display: none;
+    }
+    button {
+      .spinner-border {
+        border-width: 2px;
+        margin-right: 10px;
+      }
+    }
+    button,
+    select {
+      width: 100%;
+    }
+    input[name="dates"] {
+      display: none;
+    }
+    .input-group {
+      width: 100%;
+      .input-group-addon {
+        display: none;
+      }
+    }
+    .daterangepicker {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      float: left;
+      width: 100%;
+      margin: 0 0 15px 0;
+      &::before,
+      &::after {
+        display: none;
+      }
+      .drp-calendar {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }*/
+  .block-views-blockrelated-villas-block-1  {
+    .block-title {
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+    }
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      .views-row {
+        flex-basis: 33.3%;
+      }
+    }
+  }
+  .block-flag-block {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 5px;
+    .flag-property {
+      display: inline-block;
+      a {
+        font-size: 16px;
+        cursor: pointer;
+        &:before {
+          position: relative;
+          font-family: 'Glyphicons Halflings';
+          font-style: normal;
+          font-weight: 400;
+          content: "\e005";
+          color: #fff;
+          display: inline-block;
+          font-size: 22px;
+          text-align: center;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+      &.action-unflag {
+        a:before {
+          color: #8bc34a;
+        }
+      }
+    }
+    .ajax-throbber {
+      top: 5px;
+      margin-left: 10px;
+      height: 22px;
+      width: 22px;
+      display: inline-block;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .webform-submission-property-enquiry-form {
+    .form-item {
+      label {
+        display: inline-block;
+        float: left;
+        width: 100%;
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .block-entity-fieldnodefield-property-label {
+    width: 100%;
+    display: inline-block;
+    background: #FF5722;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    @media (max-width: $screen-xs) {
+      font-size: 12px;
+    }
+  }
+  .mfp-bg {
+    z-index: 3002;
+  }
+  .mfp-wrap {
+    z-index: 3003;
+  }
+}
+
+.block-entity-fieldnodefield-caratteristiche {
+  margin-bottom: 30px;
+  .field--name-field-caratteristiche {
+    .field--item {
+      display: inline-block;
+      float: left;
+      padding: 5px 15px;
+      border: 1px dotted rgb(158,158,158);
+      margin-right: 15px;
+      margin-bottom: 15px;
+      color: rgb(102,102,102)
+        ;
+    }
+  }
+}

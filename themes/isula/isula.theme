@@ -1,0 +1,93 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+use Drupal\Core\Link;
+use Drupal\Core\Template\Attribute;
+use Drupal\flag\Entity\Flag;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function isula_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__node__' . $content_type;
+  }
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function isula_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  if (isset($element['#field_name']) && isset($element['#view_mode'])) {
+    if ($element['#field_name'] == 'field_image_gallery') {
+      if ($element['#view_mode'] == 'teaser' || $element['#view_mode'] == 'search_result') {
+        /*if (isset($variables['items'][0]['content']['#slides'])) {
+          $node = $element['#object'];
+          // Reduce teaser gallery to 4 images.
+          $teaser_gallery = array_merge($image, $variables['items'][0]['content']['#slides']);
+          $variables['items'][0]['content']['#slides'] = $teaser_gallery;
+        }*/
+      }
+    }
+  }
+}
+
+/**
+ * Use language code for the language switcher
+ *
+ * @param $variables
+ */
+function isula_preprocess_links__language_block(&$variables) {
+  foreach ($variables['links'] as $i => $link) {
+    // @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage
+    $linkLanguage = $link['link']['#options']['language'];
+    // Replace Language name with short code and keep flags.
+    $variables['links'][$i]['link']['#title'] = str_replace($linkLanguage->getName() , $linkLanguage->get('id'), $variables['links'][$i]['link']['#title']);
+  }
+}
+
+/**
+ * Implements template_preprocess_page().
+ */
+function isula_preprocess_page(&$variables) {
+  $current_user = \Drupal::currentUser();
+  $flag_service = \Drupal::service('flag');
+  $flag = Flag::load('property');
+  $flagged_properties = \Drupal::service('flag.count')->getUserFlagFlaggingCount($flag, $current_user, session_id());
+  $variables['#attached']['drupalSettings']['userFlaggedProperties'] = $flagged_properties;
+}
+
+/**
+ * Implements template_preprocess_node().
+ */
+function isula_preprocess_node(&$variables) {
+  if ($variables['elements']['#view_mode'] == 'search_result' || $variables['elements']['#view_mode'] == 'teaser') {
+
+    $variables['content']['view_link'] = Link::createFromRoute(t('Dettagli'), 'entity.node.canonical', ['node' => $variables['node']->id()], $options);
+
+    $variables['#cache']['contexts'][] = 'url.query_args';
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function isula_page_attachments_alter(array &$attachments) {
+  // Give number of global reviews and rating to javascript
+  $number_of_reviews = \Drupal::state()->get('number_of_reviews');
+  $overall_rating = \Drupal::state()->get('overall_rating');
+
+  if (!empty($number_of_reviews) && !empty($overall_rating)) {
+    $attachments['#attached']['drupalSettings']['number_of_reviews'] = $number_of_reviews;
+    // Use an overall rating based on 10.
+    $attachments['#attached']['drupalSettings']['overall_rating'] = number_format((float)$overall_rating*2, 2, '.', '');
+  }
+}

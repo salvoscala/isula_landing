@@ -1,0 +1,45 @@
+.page-node-type-page {
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .block-entity-fieldnodebody {
+    margin-top: 50px;
+  }
+  @media (min-width: $screen-md) {
+    .isula-sidebar-right .col-md-8 {
+      width: 60% !important;
+    }
+    .isula-sidebar-right .col-md-4 {
+      width: 40% !important;
+    }
+  }
+  .sidebar .block-webform-block {
+    margin: 30px 0;
+    background: #fff;
+    @media (min-width: $screen-md) {
+      margin-top: 50px;
+    }
+    form {
+      padding: 25px 0;
+      margin: 0 auto;
+      .form-item {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 25px;
+        label {
+          display: inline-block;
+          float: left;
+          width: 100%;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .form-submit {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  }
+}

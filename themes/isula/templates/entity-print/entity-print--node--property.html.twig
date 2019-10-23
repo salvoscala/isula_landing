@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {{ entity_print_css }}
+  <style>
+  body {
+    width: 700px;
+  }
+  .page {
+    width: 700px;
+  }
+  .header {
+    font-size:12px;
+    text-align:center;
+    border-bottom: 2px solid #163a6b;
+    padding-bottom: 15px;
+  }
+  .header h1 {
+    margin-bottom: 0px;
+  }
+  .header h2 {
+    font-size: 40px;
+    text-align:center;
+    margin-top: 0;
+    margin-bottom:0px;
+    color: #163a6b;
+  }
+  .codice {
+    color: red;
+  }
+  .featured-image,
+  .descrizione {
+    margin-top: 25px;
+  }
+  .short-description {
+    font-size: 18px;
+    font-style: italic;
+    color: #9e9e9e;
+  }
+  .property-info {
+    border-collapse: collapse;
+    width: 700px;
+  }
+  .property-info td, .property-info th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .property-info tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .property-info .field .field--item {
+    text-align: right;
+  }
+  .property-info .field--label {
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    display: inline-block;
+  }
+
+  .field--name-field-image-gallery .first-item {
+    display: none;
+  }
+  .field--name-field-image-gallery .field--item {
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+<div class="page" style="font-family:'Lato', sans serif;font-size:14px;">
+  <div class="header">
+    <h2>IsulaHome</h2>
+    <div style="margin-bottom:0px;">Via Aldo Moro, 29a</div>
+    <div style="margin-bottom:0px;">97015 Modica (Rg)</div>
+  </div>
+
+  {{ content }}
+
+</div>
+</body>
+</html>

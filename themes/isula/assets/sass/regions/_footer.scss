@@ -1,0 +1,280 @@
+.prefooter {
+  margin-top: 100px;
+  background: url('../images/panorama.jpg') center center no-repeat;
+  padding: 150px 0;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+  @media (max-width: $screen-xs-max) {
+    padding: 100px 0;
+  }
+  @media (max-width: $screen-xs) {
+    padding: 50px 0;
+    background: url('../images/panorama_mobile.jpg') center center no-repeat;
+    background-size: cover !important;
+  }
+  &:before {
+    background: $brand-primary;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    opacity: .6;
+  }
+  .block-webform {
+    position: relative;
+    z-index: 10;
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: table;
+    width: 100%;
+    @media (max-width: $screen-xs-max) {
+      padding: 0 30px;
+    }
+    .form-type-processed-text {
+      text-align: center;
+      color: #fff;
+      h3 {
+        font-weight: 500;
+        font-size: 32px;
+      }
+    }
+    .form-type-email {
+      display: inline-block;
+      float: left;
+      width: 450px;
+      input {
+        border-radius:  $border-radius-base 0px 0px  $border-radius-base;
+        height: 50px;
+        font-size: 18px;
+      }
+      label {
+        display: none;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        input {
+          border-radius:  $border-radius-base;
+        }
+      }
+    }
+    .form-submit {
+      width: calc(100% - 450px);
+      margin-top: 0px;
+      font-size: 18px;
+      border-radius: 0px  $border-radius-base $border-radius-base 0px;
+      color: #fff;
+      padding: 10px 0;
+      font-weight: 500;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        border-radius:  $border-radius-base;
+        margin-top: 10px;
+      }
+    }
+    .form-item-consent {
+      width: 100%;
+      label {
+        color: #fff;
+      }
+    }
+  }
+
+}
+footer.footer {
+  padding: 70px 0;
+  font-size: 18px;
+  background: #fff;
+  @media (max-width: $screen-sm) {
+    padding: 20px 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+  .isula-footer {
+    text-align: center;
+    .footer-menu {
+      text-align: left;
+      @media (min-width: $screen-md) {
+        border-left: 1px solid #e6e6e6;
+        border-right: 1px solid #e6e6e6;
+      }
+      @media (max-width: $screen-sm) {
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        @media (max-width: $screen-sm) {
+          padding: 0;
+        }
+        li a {
+          padding: 0;
+        }
+      }
+    }
+    .icon-with-text {
+      margin-top: 6px;
+      svg {
+        display: inline-block;
+        float: left;
+        margin-right: 5px;
+        position: relative;
+        top: 5px;
+      }
+      .text {
+        display: inline-block;
+      }
+    }
+    .company {
+      text-align: left;
+      .logo {
+        max-width: 145px;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        img {
+          width: 100%;
+        }
+      }
+      @media (max-width: $screen-sm) {
+        text-align: center;
+        margin: 30px 0;
+        svg {
+          display: none;
+        }
+      }
+      @media (max-width: $screen-xs) {
+        margin: 0px;
+      }
+
+    }
+    .contact {
+      text-align: right;
+      font-weight: 100;
+      font-size: 22px;
+      @media (max-width: $screen-sm) {
+        text-align: center;
+        margin: 30px 0;
+        font-size: initial;
+      }
+      @media (max-width: $screen-xs) {
+        margin: 0px;
+      }
+      .icon-with-text {
+        margin-top: 4px;
+        a {
+          text-decoration: none;
+        }
+
+        @media (max-width: $screen-sm) {
+          display: inline-block;
+          margin: 5px 10px;
+        }
+        svg {
+          margin-right: 4px;
+          display: inline-block;
+        }
+      }
+      .social-icons-wrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.block-isula-sub-footer-block {
+  border-top: 1px solid #ececec;
+}
+.isula-sub-footer {
+  .col-xs-12 {
+    padding: 0;
+  }
+  padding: 10px;
+  .cc {
+    text-align: right;
+    img {
+      height: 46px;
+      width: auto;
+      
+    }
+  }
+  .credits,
+  .best {
+    margin-top: 13px;
+  }
+  .best {
+    position: relative;
+    padding-left: 45px;
+    font-weight: bold;
+    .best-price {
+      background: url("../images/price.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      float: left;
+      background-size: 50px 50px;
+      position: relative;
+      left: 0;
+      top: -8px;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    text-align: center;
+    .best {
+      padding: 0;
+      & > div {
+        display: inline-block;
+        width: auto;
+      }
+    }
+    .cc img {
+      margin: 0 auto;
+      display: table;
+    }
+  }
+}
+.sub-footer {
+  background: #fff;
+  @media (max-width: $screen-sm) {
+    padding-bottom: 50px;
+  }
+}
+.social-icons-wrapper {
+  display: inline-block;
+  text-align: center;
+  @media (max-width: $screen-sm) {
+    margin-top: 0;
+  }
+  .a-facebook,
+  .a-instagram,
+  .a-twitter,
+  .a-youtube {
+    margin: 0 2px;
+    font-size: 22px;
+    position: relative;
+    svg {
+      width: 35px;
+      border-radius: 50%;
+      height: 35px;
+      padding: 8px;
+      background: #163a6b;
+      color: #fff;
+    }
+  }
+}
+
+.page-node-type-homepage section#block-isulasubfooterblock {
+  @media (max-width: $screen-xs) {
+    padding: 15px 0;
+  }
+}

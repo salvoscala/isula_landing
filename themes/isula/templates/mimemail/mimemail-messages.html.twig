@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <style type="text/css">  
+       @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500&display=swap');
+       body, p, h1, h2, h3 {  
+        font-family: 'Frank Ruhl Libre', serif !important;
+       } 
+    </style>
+    <!-- CUSTOM CSS -->
+
+    <style type="text/css">
+      #main {
+        max-width: 600px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: table;
+        margin-top: 30px;
+        padding: 10px;
+        border: 2px solid #dedede;
+        background: white;
+      }
+
+      .logo {
+        padding: 15px 0;
+        display: inline-block;
+        width: 100%;
+      }
+      .logo img {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+        display: table;
+      }
+      .menu-links {
+        width: 100%;
+        display: inline-block;
+        background: #153a6b;
+        font-size: 15px;
+        border-top: 1px solid white;
+      }
+      .menu-links a {
+        width:25%;
+        display:inline-block;
+        float:left;
+        text-align:center;
+        text-decoration:none;
+        color:white;
+        padding: 15px 0;
+      }
+      @media (max-width: 480px) {
+        .menu-links a {
+          width:50%;
+          padding: 10px 0;
+        }
+      }
+      .content {
+        padding: 40px 20px;
+      }
+      @media (max-width: 480px) {
+        .content {
+          padding: 40px 20px;
+        }
+      }
+      .footer {
+        background: #153a6b;
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        color: white;
+      }
+      .footer a {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .social {
+        margin-top: 10px;
+        display: inline-block;
+        width: 100%;
+      }
+      .social svg {
+        width: 18px;
+        margin: 0 2px;
+        height: 18px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 7px;
+        background: #7e1f27;
+      }
+      .social .a-facebook {
+        background: url(https://www.isulasicilia.com/themes/custom/isula/images/mail/facebook.png);
+        text-indent: -999999px;
+        width: 26px;
+        height: 26px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-position: center;
+        background-color: white;
+        padding: 4px;
+        border-radius: 50%;
+        margin: 0 5px;
+        text-indent: -999999px;
+
+      }
+      .social .a-instagram {
+        background: url(https://www.isulasicilia.com/themes/custom/isula/images/mail/instagram.png);
+        text-indent: -999999px;
+        width: 26px;
+        height: 26px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-position: center;
+        background-color: white;
+        padding: 4px;
+        border-radius: 50%;
+        margin: 0 5px;
+        text-indent: -999999px;
+      }
+    </style>
+  </head>
+
+
+  <body id="mimemail-body" style="background:#e8e8e8;font-family: 'Frank Ruhl Libre', serif !important;padding: 40px 0;">
+    <div id="center">
+      <table id="main">
+
+        <!-- HEADER -->
+        <tr>
+          <td>
+            <!-- Background Header-->
+            <a class="logo" href="https://www.isulasicilia.com" target="_blank">
+              <img src="https://www.isulasicilia.com/themes/custom/isula/logo.png">
+            </a>
+            
+            <!-- Menu -->
+            <div class="menu-links">
+              <a href="https://www.isulasicilia.com/" target="_blank">Home</a>
+              <a href="https://www.isulasicilia.com/villas-in-sicily" target="_blank">Our Villas</a>
+              <a href="https://www.isulasicilia.com/discover-sicily" target="_blank">Discover Sicily</a>
+              <a href="https://www.isulasicilia.com/contact-us" target="_blank">Contact</a>
+            </div>
+          </td>
+        </tr>
+      
+        <!-- CONTENT -->
+        <tr>
+          <td class="content">
+            {{ body|raw }}
+          </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+          <td class="footer">
+
+            <div class="footer-text">
+              <p style="text-align:center;font-size:26px;margin-bottom: 0;margin-top: 0;">IsulaSicilia</p>
+
+              <p style="border-top: 1px dotted #fff;padding-top: 15px;margin-bottom: 7px;font-size:13px;">Isula Travel srl, Via Aldo Moro, 29a - 97015 - Modica (Rg) SICILY, ITALY.</p>
+              <p style="margin-bottom: 7px;font-size:13px;">booking@isulasicilia.com  |  +39 0932 904444</p>
+            </div>
+
+            <div class="social">
+              <a class="a-facebook" href="https://www.facebook.com/isulasicilia" target="_blank"></a>
+              
+              <a class="a-instagram" href="https://www.instagram.com/isulasicilia" target="_blank"></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

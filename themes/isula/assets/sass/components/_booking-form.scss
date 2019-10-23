@@ -1,0 +1,128 @@
+section.block.block-isula-booking-block {
+  margin: 0 auto;
+  background: #153a6bd4;
+  padding: 30px;
+  form {
+    margin: 0 auto;
+    display: flex;
+    label {
+      display: none;
+    }
+
+    .form-item,
+    .form-submit {
+      width: 25%;
+      margin-bottom: 0;
+      display: inline-block;
+      float: left;
+      &.form-item-dates {
+        width: 50%;
+      }
+      @media (max-width: $screen-sm) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .form-item {
+      select,
+      input {
+        font-size: 18px;
+        height: 65px;
+        border-radius: 0;
+        -webkit-appearance: none;
+      }
+      &.form-item-check-in input,
+      &.form-item-check-out input {
+        @media (min-width: $screen-md) {
+          border-right: 0;
+        }
+      }
+      @media (min-width: $screen-sm) {
+        &:first-child input {
+          border-radius: $border-radius-base 0 0 $border-radius-base;
+        }
+      }
+    }
+
+    .form-submit {
+      padding: 17.5px 0;
+      font-size: 18px;
+      border-radius: 0;
+      .icon {
+        top: 3px;
+        margin-right: 5px;
+      }
+      @media (min-width: $screen-sm) {
+        border-radius: 0 $border-radius-base $border-radius-base 0;
+      }
+    }
+  }
+}
+
+#isulaBookingForm {
+  .modal-header {
+    padding: .4em 1.5em;
+    .ui-dialog-titlebar-close {
+      top: 10px;
+      right: 15px;
+    }
+  }
+  section.block.block-isula-booking-block {
+    max-width: 100%;
+    position: initial;
+    background: #fff;
+    bottom: 0;
+    padding: 10px;
+    display: inline-block;
+    form {
+      padding: 10px;
+      width: 100%;
+      display: inline-block;
+    }
+    .form-item,
+    .form-submit {
+      width: 100%;
+      float: left;
+      margin-bottom: 12px;
+      label {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    .form-item {
+      input,
+      select {
+        border-right: 1px solid #cccccc;
+        height: 51px;
+        border-radius: $border-radius-base;
+      }
+    }
+    .form-submit {
+      padding: 12px 0;
+      border-radius: $border-radius-base;
+    }
+  }
+}
+
+.isula-booking-button {
+  cursor: pointer;
+}
+
+section.block-isula-booking-mobile-block {
+  padding: 0 !important;
+  .cta {
+    width: 100%;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    background: $brand-primary;
+    color: white;
+    &:hover {
+      background: #0a1d38;
+    }
+  }
+}

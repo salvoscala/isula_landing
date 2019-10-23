@@ -1,0 +1,77 @@
+.view-homepage.view-display-id-block_1,
+.view-villas-categories.view-display-id-page_1 {
+  .views-row {
+    @include make-xs-column(12, 0);
+    @include make-sm-column(6, 0);
+    @media (min-width: $screen-sm) {
+      width: 50%;
+    }
+    position: relative;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding: 2px;
+    margin-bottom: -2px;
+    @media (max-width: $screen-sm) {
+      margin: 0;
+      margin-bottom: 4px;
+      padding: 0;
+    }
+    img {
+      width: 100%;
+    }
+    .views-field-name {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 60px;
+      color: white;
+      z-index: 2;
+      pointer-events: none;
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+      padding: 0 25px;
+      .category-info {
+        position: relative;
+        &:after {
+          content: '';
+          width: 60px;
+          height: 60px;
+          left: 0;
+          right: 0;
+          bottom: -50px;
+          margin: 0 auto;
+          background-size: cover;
+          display: inline-block;
+          position: absolute;
+          background: url("../images/arrow.svg") center center no-repeat, linear-gradient(transparent, transparent);
+        }
+      }
+      @media (min-width: $screen-sm) {
+        font-size: 20px;
+      }
+      .name {
+        font-weight: 600;
+        font-size: 28px;
+        text-transform: uppercase;
+        @media (max-width: $screen-xs) {
+          font-size: 20px;
+        }
+      }
+      .description {
+        /*position: relative;
+        padding-top: 8px;
+        &:not(:empty):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 100px;
+          height: 1px;
+          background: #fff;
+          left: 0;
+          right: 0;
+          display: inline-block;
+          margin: 0 auto;
+        }*/
+      }
+    }
+  }
+}

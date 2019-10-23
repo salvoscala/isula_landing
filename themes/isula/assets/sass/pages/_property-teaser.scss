@@ -1,0 +1,174 @@
+.property.teaser {
+  max-width: 450px;
+  background: white;
+  border-radius: $border-radius-base;
+  -webkit-box-shadow: 0 0 3px 2px rgba(0,0,0,.1);
+  box-shadow: 0 0 3px 2px rgba(0,0,0,.1);
+  -webkit-transition: box-shadow  1s cubic-bezier(.165,.84,.44,1);
+  transition: box-shadow 1s cubic-bezier(.165,.84,.44,1);
+  .node-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  &:hover {
+    -webkit-box-shadow: 0 0 6px 3px rgba(0,0,0,.2);
+    box-shadow: 0 0 6px 3px rgba(0,0,0,.2);
+  }
+  .content {
+    position: relative;
+  }
+  .field--name-field-image-gallery img {
+    border-radius: $border-radius-base $border-radius-base 0 0;
+  }
+  .field--name-field-property-label {
+    position: absolute;
+    z-index: 1;
+    top: 18px;
+    padding: 5px 10px;
+    background: $brand-warning;
+    border-radius: 0 $border-radius-base $border-radius-base 0;
+    color: white;
+    font-size: 14px;
+  }
+  .property-content {
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+
+    .info {
+      padding-right: 0;
+    }
+    .short-description {
+      font-size: 14px;
+      color: $brand-warning;
+    }
+    .experience-reviews {
+      display: inline-block;
+      width: 100%;
+      border-top: 1px solid #eaebed;
+      margin-top: 10px;
+      padding-top: 10px;
+      .left,
+      .right {
+        display: inline-block;
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .link {
+        font-weight: bold;
+      }
+      .field--name-field-overall-rating {
+        position: relative;
+        top: 2px;
+      }
+      .number-of-reviews {
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+  .property-info {
+    display: inline-block;
+    width: 100%;
+    .field--name-field-citta {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      margin-top: 3px;
+      font-size: 12px;
+      color: $brand-primary;
+      .field--item {
+        display: none;
+        &:first-child {
+          display: block;
+        }
+      }
+      &:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        float: left;
+        top: 1px;
+        right: 2px;
+        background: url("../images/icons/marker.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      }
+    }
+    .field--name-field-max-capacity,
+    .field--name-field-bedrooms,
+    .field--name-field-bathrooms {
+      display: inline-block;
+      float: left;
+      width: 33.3%;
+      padding-left: 5px;
+      &:before {
+        content: '';
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        right: 6px;
+      }
+    }
+    .field--name-field-max-capacity:before {
+      background: url("../images/icons/guest.svg") center center no-repeat, linear-gradient(transparent, transparent);
+    }
+    .field--name-field-bedrooms:before {
+      background: url("../images/icons/bed.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      top: 5px;
+    }
+    .field--name-field-bathrooms:before {
+      background: url("../images/icons/bath.svg") center center no-repeat, linear-gradient(transparent, transparent);
+    }
+  }
+  .flag-property {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      &:before {
+        position: relative;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        content: "\e005";
+        color: #ffffffa1;
+        display: inline-block;
+        font-size: 26px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    &.action-unflag {
+      a:before {
+        color: red;
+        background: none;
+      }
+    }
+  }
+  .view {
+    margin-top: 10px;
+    text-align: right;
+    .btn {
+      padding: 3px 9px;
+    }
+  }
+}

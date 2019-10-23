@@ -1,0 +1,121 @@
+.path-discover-sicily .isula-header {
+  box-shadow: none;
+}
+.block-isula-discover-sicily-title-block {
+  background: url('/themes/custom/isula/images/discover.jpg') center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 150px 0;
+  margin-bottom: 50px;
+  h1 {
+    margin: 0;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.95);
+    font-weight: 600;
+    font-size: 60px;
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.block-views-blockblog-block-1 {
+  .views-row {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    position: relative;
+    .views-field-field-blog-categories {
+      position: absolute;
+      top: 20px;
+      color: white;
+      padding: 5px 25px;
+      background: #FF5722;
+      border-radius: 0  $border-radius-base  $border-radius-base 0;
+    }
+    &:last-child {
+      border: none;
+    }
+    .views-field-title {
+      margin-top: 12px;
+      margin-bottom: 6px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+  }
+}
+
+.path-discover-sicily {
+  .sidebar.is_stuck {
+    margin-top: 15px;
+  }
+  .block-facet--checkbox {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ececec;
+    .block-title {
+      margin-top: 0;
+    }
+  }
+}
+.page-node-type-blog {
+  .sidebar.is_stuck {
+    margin-top: 15px;
+  }
+  .sidebar {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ececec;
+  }
+  .isula-sidebar-right {
+    margin-top: 60px;
+  }
+  .block-entity-fieldnodefield-featured-image {
+    margin-bottom: 25px;
+    img {
+      width: 100%;
+    }
+  }
+  .block-entity-fieldnodebody img {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: table;
+  }
+}
+.block-views-blockblog-block-2  {
+  .block-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .views-row {
+    margin-bottom: 22px;
+    display: inline-block;
+    width: 100%;
+    .views-field-title {
+      display: inline-block;
+      float: left;
+      color: $brand-primary;
+      font-size: 18px;
+      width: calc(100% - 110px);
+    }
+    .views-field-body {
+      display: inline-block;
+      float: left;
+      font-size: 14px;
+      width: calc(100% - 110px);
+    }
+    .views-field-field-featured-image {
+      display: inline-block;
+      float: left;
+      margin-right: 10px;
+      max-width: 100px;
+
+    }
+  }
+}

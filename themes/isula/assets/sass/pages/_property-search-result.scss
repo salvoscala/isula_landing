@@ -1,0 +1,357 @@
+.property.search-result {
+  background: white;
+  border-radius: $border-radius-base;
+  -webkit-box-shadow: 0 0 3px 2px rgba(0,0,0,.1);
+  box-shadow: 0 0 3px 2px rgba(0,0,0,.1);
+  -webkit-transition: box-shadow  1s cubic-bezier(.165,.84,.44,1);
+  transition: box-shadow 1s cubic-bezier(.165,.84,.44,1);
+  margin: 0 auto;
+  display: table;
+  max-height: 300px;
+  max-width: 900px;
+  width: 100%;
+  .property-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    .property-row {
+      .info,
+      .gallery {
+        display: inline-block;
+        float: left;
+      }
+      .info {
+        width: calc(100% - 350px);
+        padding: 25px;
+        @media (max-width: $screen-xs) {
+          padding: 10px;
+          font-size: 13px;
+          width: calc(100% - 180px);
+        }
+      }
+      .gallery {
+        width: 350px;
+        position: relative;
+        @media (max-width: $screen-xs) {
+          width: 180px;
+        }
+        .flag-property {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            &:before {
+              position: relative;
+              font-family: 'Glyphicons Halflings';
+              font-style: normal;
+              font-weight: 400;
+              content: "\e005";
+              color: #ffffffa1;
+              display: inline-block;
+              font-size: 26px;
+              text-align: center;
+              vertical-align: middle;
+              border-radius: 20px;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+            }
+            &:hover:before {
+              color: red;
+            }
+          }
+          &.action-unflag {
+            a:before {
+              color: red;
+            }
+          }
+        }
+      }
+      .field--name-field-property-label {
+        position: absolute;
+        z-index: 1;
+        top: 18px;
+        padding: 5px 10px;
+        background: #FF5722;
+        border-radius: 0  $border-radius-base  $border-radius-base 0;
+        color: white;
+        font-size: 14px;
+        max-width: 50%;
+        @media (max-width: $screen-xs) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .rating {
+    display: inline-block;
+    width: 100%;
+    margin: 0px 0 8px 0;
+    padding: 0 25px;
+    .number-of-reviews {
+      margin-left: 2px;
+    }
+  }
+  .field--name-field-image-gallery {
+    img {
+      width: 100%;
+      border-radius: 5px 0 0 0;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: $screen-xs) {
+        //border-radius: 5px 5px 0px 0px;
+      }
+    }
+  }
+  .node-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @media (max-width: $screen-xs) {
+      font-size: 16px;
+    }
+  }
+  &:hover {
+    -webkit-box-shadow: 0 0 6px 3px rgba(0,0,0,.2);
+    box-shadow: 0 0 6px 3px rgba(0,0,0,.2);
+  }
+  .short-description {
+    margin-bottom: 10px;
+    color: $brand-warning;
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
+  }
+  .experience-reviews .starrating {
+    @media (max-width: $screen-xs) {
+      display: inline-block;
+    }
+  }
+  .field--name-field-highlights {
+    .field--item {
+      line-height: 21px;
+      &:before {
+        content: "•";
+        margin-right: 5px;
+        font-size: 24px;
+        top: 3px;
+        position: relative;
+        @media (max-width: $screen-xs) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .property-highlights {
+    flex-grow: 1;
+    padding: 0 25px;
+    ul {
+      padding-left: 25px;
+    }
+  }
+  .property-info {
+    background: #f8f7f5;
+    display: inline-block;
+    float: left;
+    padding: 8px 15px;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0 0  $border-radius-base $border-radius-base;
+    @media (max-width: $screen-xs) {
+      font-size: 13px;
+    }
+    .details {
+      display: flex;
+      float: left;
+      .detail {
+        border-right: 1px solid #dfdbd1;
+        padding: 0px 15px;
+        display: flex;
+        &:first-child {
+          padding-left: 5px;
+        }
+        &:last-child {
+          border-right: none;
+        }
+        @media (max-width: $screen-xs) {
+          padding: 0px 10px;
+          &:first-child {
+            padding-left: 0px;
+          }
+        }
+      }
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        display: inline-block;
+        float: none;
+        font-size: 11px;
+        .detail {
+          display: inline-block;
+          float: left;
+        }
+        .detail:first-child {
+          display: inline-block;
+          float: left;
+        }
+      }
+    }
+    .link {
+      float: right;
+      a {
+        text-decoration: underline;
+        line-height: 30px;
+        font-weight: 500;
+      }
+      @media (max-width: $screen-xs) {
+        margin-top: 16px;
+        text-align: right;
+        float: none !important;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    .field--name-field-citta {
+      margin-top: 3px;
+      .field--item {
+        display: none;
+        &:first-child {
+          display: inline-block;
+        }
+      }
+      @media (max-width: $screen-xs) {
+       // display: none;
+      }
+      a {
+        color: $brand-primary;
+        text-decoration: underline;
+      }
+      color: #828282;
+    }
+    .field--name-field-citta,
+    .field--name-field-locali,
+    .field--name-field-max-capacity,
+    .field--name-field-bedrooms,
+    .field--name-field-bathrooms,
+    .field--name-field-superficie {
+      &:before {
+        content: '';
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        right: 6px;
+        @media (max-width: $screen-xs) {
+          width: 18px;
+          height: 18px;
+          right: 4px;
+        }
+      }
+    }
+    .field--name-field-citta:before {
+      background: url("../images/icons/marker.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      display: inline-block;
+      float: left;
+      top: 1px;
+    }
+    .field--name-field-locali:before {
+      background: url("../images/icons/locali.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      top: 7px;
+      background-size: cover;
+    }
+    .field--name-field-bedrooms:before {
+      background: url("../images/icons/bed.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      top: 5px;
+    }
+    .field--name-field-bathrooms:before {
+      background: url("../images/icons/bath.svg") center center no-repeat, linear-gradient(transparent, transparent);
+    }
+    .field--name-field-superficie:before {
+      background: url("../images/icons/superficie.svg") center center no-repeat, linear-gradient(transparent, transparent);
+      background-size: cover;
+    }
+  }
+}
+
+.path-ricerca-immobili .block-region-top {
+  position: relative;
+}
+.path-ricerca-immobili .prefooter {
+  margin-top: 0;
+}
+.path-ricerca-immobili .block .block-title:after {
+  width: 100%;
+}
+.block-isula-availability-search-title-block {
+  position: absolute;
+  top: 160px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  pointer-events: none;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.95);
+  h1,h2 {
+    margin: 0;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 60px;
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+  @media (max-width: 768px) {
+    top: 65px;
+  }
+}
+
+.block-isula-availability-search-image-block {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  width: 100%;
+  padding: 0;
+  height: 375px;
+  @media (max-width: $screen-xs-max) {
+    height: 250px;
+  }
+  img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    @media (max-width: $screen-xs-max) {
+      height: 250px;
+    }
+  }
+}
+.isula-immobili-search {
+  .left-col .block-region-left {
+    padding: 25px;
+    background: white;
+    background: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  }
+  .wide-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

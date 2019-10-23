@@ -1,0 +1,11 @@
+.daterangepicker {
+  z-index: 9999 !important;
+  .calendar-table th.month {
+    text-transform: uppercase;
+    color: $brand-primary;
+  }
+  td.active,
+  td.active:hover {
+    background-color: $brand-primary;
+  }
+}

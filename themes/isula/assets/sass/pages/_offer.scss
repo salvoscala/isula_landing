@@ -1,0 +1,15 @@
+body.page-node-type-offer {
+  .block-entity-fieldnodefield-offer-description {
+    @extend .container;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .view-properties-by-offer {
+    .property.search-result {
+      max-width: 100%;
+    }
+    .views-row {
+      margin-bottom: 25px;
+    }
+  }
+}

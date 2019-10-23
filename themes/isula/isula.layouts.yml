@@ -1,0 +1,101 @@
+isula_property:
+  label: Isula Property
+  category: Isula
+  template: layouts/isula-property
+  regions:
+    top:
+      label: Top
+    highlight:
+      label: Highlight
+    main_left:
+      label: Main Left
+    sidebar:
+      label: Sidebar
+    content:
+      label: Content
+    content_sidebar:
+      label: Content Sidebar
+    bottom:
+      label: Bottom
+
+isula_one_column:
+  label: Isula One Column
+  category: Isula
+  template: layouts/isula-one-column
+  regions:
+    top:
+      label: Top
+    center:
+      label: Center
+    center_sidebar:
+      label: Sidebar
+    center_content:
+      label: Content
+    bottom:
+      label: Bottom
+
+isula_category:
+  label: Isula Category
+  category: Isula
+  template: layouts/isula-category
+  regions:
+    top:
+      label: Top
+    center_left:
+      label: Center Left
+    center_right:
+      label: Center Right
+    bottom:
+      label: Bottom
+
+isula_availability_search:
+  label: Isula Availability Search
+  category: Isula
+  template: layouts/isula-availability-search
+  regions:
+    top:
+      label: Top
+    left:
+      label: Left
+    center:
+      label: Center
+    bottom:
+      label: Bottom
+
+isula_sidebar_right:
+  label: Isula Sidebar Right
+  category: Isula
+  template: layouts/isula-sidebar-right
+  regions:
+    top:
+      label: Top
+    highlight:
+      label: Highlight
+    main_left:
+      label: Main Left
+    sidebar:
+      label: Sidebar
+    bottom:
+      label: Bottom
+
+isula_sidebar_right_wide:
+  label: Isula Sidebar Right Wide
+  category: Isula
+  template: layouts/isula-sidebar-right-wide
+  regions:
+    top:
+      label: Top
+    highlight:
+      label: Highlight
+    main_left:
+      label: Main Left
+    sidebar:
+      label: Sidebar
+    middle_top:
+      label: Middle Top
+    middle_left:
+      label: Middle Left
+    middle_right:
+      label: Middle Right
+    bottom:
+      label: Bottom

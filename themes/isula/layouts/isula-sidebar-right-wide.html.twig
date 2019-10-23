@@ -1,0 +1,50 @@
+<div {{ attributes.setAttribute('id', settings.css_id).addClass('isula-sidebar-right-wide', settings.css_classes ) }}>
+  <div class="top">
+    {{ content.top }}
+  </div>
+
+  <div class="highlight">
+    {{ content.highlight }}
+  </div>
+
+  <div class="wide-container">
+    <div class="first-row">
+      <div class="col-xs-12 col-md-9 col-lg-8">
+        <div class="content">
+          {{ content.main_left }}
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-3 col-lg-4 sidebar">
+        <div class="content">
+          {{ content.sidebar }}
+        </div>
+      </div>
+    </div>
+
+    <div class="second-row">
+      <div class="col-xs-12 middle_top">
+        <div class="content">
+          {{ content.middle_top }}
+        </div>
+      </div>
+    </div>
+
+    <div class="third-row">
+      <div class="col-xs-12 col-md-7 middle_left">
+        <div class="content">
+          {{ content.middle_left }}
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-5 middle_right">
+        <div class="content">
+          {{ content.middle_right }}
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      {{ content.bottom }}
+    </div>
+  </div>
+</div>

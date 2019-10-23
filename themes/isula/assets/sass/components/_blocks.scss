@@ -1,0 +1,147 @@
+.block-views-blockpromoted-properties-block-1 {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+  h2.block-title {
+    text-align: center;
+    &:after {
+      margin: 0 auto;
+      top: 12px;
+    }
+    
+  }
+  .row {
+    margin: 0;
+  }
+  .col {
+    margin: 25px auto;
+    display: table;
+  }
+}
+
+.content-sidebar .block-webform,
+.sidebar .block-webform {
+  background: #fff;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: $border-radius-base;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+  position: relative;
+  .block-title {
+    margin-top: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 10px 25px;
+    background: $brand-primary;
+    border-radius:  $border-radius-base $border-radius-base 0 0;
+    color: #fff;
+    font-weight: 400;
+    text-transform: none;
+    border: none;
+  }
+}
+
+.block-facets-summary {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      a {
+        padding: 8px 12px;
+        font-weight: 200;
+        background: $brand-danger;
+        color: #fff;
+      }
+    }
+  }
+}
+.block-facets {
+  margin-bottom: 20px;
+  &:last-child {
+    margin: 0;
+  }
+  .facets-widget-checkbox {
+    padding: 15px;
+    ul {
+      margin-bottom: 0;
+    }
+  }
+  .facets-widget-range_slider {
+    padding: 15px;
+    max-width: calc(100% - 25px);
+    margin: 0 auto;
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+  .block-title {
+    font-size: 16px;
+    width: 100%;
+    background: #153a6b;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+}
+
+.block-views-blockricerca-immobili-block-1 {
+  .property.search-result {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  /*.block-facets {
+    padding: 0;
+    .block-title {
+      margin: 0;
+      position: relative;
+      &.closed {
+        border-radius: 8px;
+      }
+    }
+    .facets-widget-checkbox,
+    .facets-widget-range_slider {
+      padding: 25px;
+    }
+  }
+  .block-facets .block-title:after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-image: url('../images/chevron.svg');
+    background-repeat: no-repeat;
+    top: 20px;
+    background-repeat: no-repeat;
+    right: 16px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .block-facets .block-title.closed:before {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }*/
+}
