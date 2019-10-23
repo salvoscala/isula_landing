@@ -15,7 +15,8 @@ body .image {
   font-size: 20px;
 }
 .block-webform form select,
-.block-webform form input {
+.block-webform form input,
+.block-webform form textarea {
   border-radius: 2px;
   height: 40px;
   font-size: 16px;
@@ -64,6 +65,7 @@ body .image {
   .block-webform form {
     padding: 50px 60px;
   }
+  .block-webform form textarea,
   .block-webform form select,
   .block-webform form input {
     font-size: 14px;
