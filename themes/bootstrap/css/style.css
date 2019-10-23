@@ -14,10 +14,14 @@ body .image {
   color: #fff;
   font-size: 20px;
 }
+.block-webform form select,
 .block-webform form input {
   border-radius: 2px;
   height: 40px;
   font-size: 16px;
+}
+.block-webform form select{
+  line-height: 25px;
 }
 .block-webform form label {
   font-weight: 400;
@@ -60,6 +64,7 @@ body .image {
   .block-webform form {
     padding: 50px 60px;
   }
+  .block-webform form select,
   .block-webform form input {
     font-size: 14px;
     height: auto;
@@ -70,4 +75,21 @@ body .image {
   .block-webform .form-submit {
     font-size: 14px;
   }
+  .block-webform form select{
+    line-height: initial;
+  }
+}
+
+.text {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 65px;
+    font-size: 22px;
+    background: #49a74d;
+    color: white;
+    padding: 10px;
+}
+
+.visually-hidden {
+  display: none !important;
 }
